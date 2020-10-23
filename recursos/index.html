@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Toggle Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <link rel='stylesheet prefetch' href='http://bradfrost.github.com/this-is-responsive/styles.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!--Pattern HTML-->
+  <div id="pattern" class="pattern">
+    <!--Begin Pattern HTML-->
+		<a href="#menu" class="menu-link">Menu</a>
+		<nav id="menu" role="navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!--End Pattern HTML-->
+	
+	<div class="container">	
+		<section class="pattern-description">
+			<h1>Toggle Navigation</h1>
+      <p>From <a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive Navigation Patterns</a>:</p>
+			<p>For small screens a &#8220;menu&#8221; button appears that, when clicked, expands an accordion style navigation. When more screen real estate becomes available</p>
+			<h3>Pros</h3>
+			<ul>
+			<li><strong>Keeps the user in place</strong>- Where the footer anchor jumps suddenly, the toggle menu simply appears in place, which doesn&#8217;t disorient the user.</li>
+			<li><strong>Elegant</strong>- This is definitely one of the more classy approaches. No awkward forms or page jumps, just a smooth animated flyout or basic show/hide.</li>
+			<li><strong>Easy to scale up</strong>- All you need to do is hide the mobile trigger and show the nav list when the appropriate breakpoint is reached and you have yourself a normal large screen nav. All this can be accomplished with CSS.</li>
+			</ul>
+			<h3>Cons</h3>
+			<ul>
+			<li><strong>Animation performance</strong>- Your mileage will vary when doing any sort of animation on mobile devices. Android is notoriously bad with CSS animations and so things might not be as smooth as you&#8217;d like. Also, for what it&#8217;s worth I&#8217;ve recently been animating <a href="http://jsfiddle.net/leaverou/zwvNY/">max-height</a> which seems to work well.</li>
+			<li><strong>Javascript dependency</strong>- Again this approach relies on a bit of Javascript in order to trigger the toggle, but it&#8217;s minimal. I have one Blackberry test device that refuses to listen to any of this stuff, but most browsers, including proxy browsers like Opera Mini and Dolphin Mini, handle it just fine.</li>
+			</ul>
+			<h3>In the Wild</h3>
+			<ul>
+			<li><a href="http://www.starbucks.com/">Starbucks</a></li>
+			<li><a href="http://mobilewebbestpractices.com">Mobile Web Best Practices</a></li>
+			<li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+			</ul>
+			<h3>Resources</h3>
+			<ul>
+			<li><a href="http://jasonweaver.name/lab/flexiblenavigation/">FlexNav</a>
+			<li><a href="http://filamentgroup.com/lab/responsive_design_approach_for_navigation/">A Responsive Design Approach for Navigation, Part 1</a> by <a href="http://twitter.com/filamentgroup">@filamentgroup</a></li>
+			</ul>
+		</section>
+		<footer role="contentinfo">   
+			<div>
+				<nav id="menu">
+					<a href="http://bradfrost.github.com/this-is-responsive/patterns.html">&larr;More Responsive Patterns</a>
+				</nav>
+			</div>
+		</footer>
+	</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

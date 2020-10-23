@@ -1,0 +1,120 @@
+/**********/
+/* LAYOUT */
+/**********/
+.container-fluid {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.container {
+  width: 100%;
+}
+
+#header-logo {
+  padding: 1em;
+  background: #111111;
+}
+
+#header-nav {
+  padding: 1em;
+  background: #111111;
+}
+
+#header-nav-toggle {
+  color: yellow;
+  font-size: 2em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/***********/
+/* MODULES */
+/***********/
+.is-hidden {
+  display: none;
+}
+
+/* Nav */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  width: 100%;
+  margin: 0 0 1em 0;
+  display: block;
+}
+
+.nav li:last-child {
+  margin: 0;
+}
+
+.nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*************/
+/* MODIFIERS */
+/*************/
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: block;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+@media screen and (min-width: 48em) {
+  /* Header */
+
+  .container-fluid {
+    padding: 0;
+    background: #111111;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #header-logo {
+    padding: 1rem;
+    background: #111111;
+  }
+
+  #header-nav {
+    padding: 0.5rem;
+    background: #111111;
+    display: block;
+  }
+
+  #header-nav-toggle {
+    display: none;
+  }
+
+  /* Nav */
+
+  .nav li {
+    width: auto;
+    margin: 0 0.5rem;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
